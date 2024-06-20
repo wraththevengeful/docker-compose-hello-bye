@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hello-app:
+    build: ./hello-world-compose
+    ports:
+      - "3000:3000"
+  bye-app:
+    build: ./bye-app
+    ports:
+      - "3001:3001"
